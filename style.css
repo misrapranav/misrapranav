@@ -1,12 +1,4 @@
-/* Old-school academic style inspired by ekdeepslubana.github.io */
-
-:root {
-  --bg: #ffffff;
-  --fg: #111111;
-  --muted: #555555;
-  --accent: #003366;
-  --maxw: 720px;
-}
+/* Simple academic layout — no fancy tricks */
 
 * {
   box-sizing: border-box;
@@ -16,13 +8,18 @@
 
 body {
   font-family: "Georgia", "Times New Roman", serif;
-  background: var(--bg);
-  color: var(--fg);
-  line-height: 1.55;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+
+  /* 15% margins on left/right */
+  margin: 24px 15%;
 }
 
+/* Links */
+
 a {
-  color: var(--accent);
+  color: #003366;
   text-decoration: none;
 }
 
@@ -30,9 +27,10 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Container used inside sections */
+
 .container {
-  width: 94%;
-  max-width: --maxw;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -40,27 +38,26 @@ a:hover {
 
 .site-header {
   border-bottom: 1px solid #dddddd;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
 }
 
 .nav {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0.6rem 0.2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
-  font-size: 0.88rem;
+  gap: 12px;
+  font-size: 13px;
 }
 
 .nav a {
   letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 /* Sections */
 
 .section {
-  padding: 1.8rem 0;
+  padding: 20px 0;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -68,63 +65,80 @@ a:hover {
   background: #fafafa;
 }
 
+/* Hero */
+
 .hero {
-  padding-top: 1rem;
+  padding-top: 8px;
 }
 
 /* Typography */
 
+/* Name line */
 h1 {
-  font-size: 1.9rem;
-  margin-bottom: 0.3rem;
+  font-size: 24px;
+  margin-bottom: 4px;
   font-weight: 600;
 }
 
+/* “Cognitive Neuroscience · AI · Language” */
 .subtitle {
   font-style: italic;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
+  color: #555555;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
+/* Section headings: About, Research, etc. */
 h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.15rem;
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
   border-bottom: 1px solid #cccccc;
 }
 
+/* Subheadings: PhD, Teaching, etc. */
 h3 {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+  font-size: 16px;
+  margin-bottom: 4px;
 }
 
+/* MAIN TEXT — controls About, Research, etc. */
+p,
+li {
+  font-size: 15px;   /* ← change THIS if you want all main text bigger/smaller */
+}
+
+/* Paragraph spacing */
 p {
-  margin-bottom: 0.7rem;
+  margin-bottom: 10px;
 }
 
+/* Publication metadata, smaller grey text */
 .muted {
-  color: var(--muted);
-  font-size: 0.9rem;
+  color: #555555;
+  font-size: 13px;
 }
 
 /* Lists */
 
 ul {
-  margin-left: 1.2rem;
-  margin-bottom: 0.6rem;
+  margin-left: 18px;
+  margin-bottom: 8px;
 }
 
 ul li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 4px;
 }
 
 .pub-list li {
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 
+/* Experience / research items */
+
 .item {
-  margin-top: 1rem;
-  margin-bottom: 0.6rem;
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 /* Talks list */
@@ -142,8 +156,8 @@ ul li {
 
 .site-footer {
   border-top: 1px solid #dddddd;
-  margin-top: 1.5rem;
-  padding: 0.8rem 0 1.4rem;
-  font-size: 0.85rem;
-  color: var(--muted);
+  margin-top: 20px;
+  padding: 8px 0 12px;
+  font-size: 13px;
+  color: #555555;
 }
