@@ -19,17 +19,6 @@ body {
   padding: 24px 0;
 }
 
-/* /* Unified wrapper for perfect alignment */
-.wrapper {
-  max-width: 860px;   /* reduce from 900 to tighten feel */
-  margin: 0 auto;
-  background: #ffffff;
-  border: 1px solid #e1e1e5;
-  border-radius: 6px;
-
-  /* even, light padding */
-  padding: 10px 14px;
-}*/
 
 .wrapper {
   width: 98%;
