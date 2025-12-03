@@ -1,4 +1,4 @@
-/* Old-school academic style with boxed layout */
+/* Old-school academic style inspired by ekdeepslubana.github.io */
 
 :root {
   --bg: #ffffff;
@@ -14,20 +14,12 @@
   padding: 0;
 }
 
-/* Global text + page box */
-
 body {
   font-family: "Georgia", "Times New Roman", serif;
   background: var(--bg);
   color: var(--fg);
   line-height: 1.55;
-  font-size: 15px;          /* ← change this to shrink/grow all text */
-  border: 1px solid #cccccc;
-  margin: 24px;
-  padding: 20px;
 }
-
-/* Links */
 
 a {
   color: var(--accent);
@@ -38,11 +30,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Layout container */
-
 .container {
-  width: 100%;
-  max-width: var(--maxw);
+  width: 94%;
+  max-width: --maxw;
   margin: 0 auto;
 }
 
@@ -51,7 +41,6 @@ a:hover {
 .site-header {
   border-bottom: 1px solid #dddddd;
   margin-bottom: 1.5rem;
-  padding-bottom: 0.2rem;
 }
 
 .nav {
@@ -66,13 +55,12 @@ a:hover {
 
 .nav a {
   letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 /* Sections */
 
 .section {
-  padding: 1.6rem 0;
+  padding: 1.8rem 0;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -80,16 +68,14 @@ a:hover {
   background: #fafafa;
 }
 
-/* Hero */
-
 .hero {
-  padding-top: 0.8rem;
+  padding-top: 1rem;
 }
 
 /* Typography */
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
 }
@@ -101,7 +87,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.15rem;
   border-bottom: 1px solid #cccccc;
@@ -135,8 +121,6 @@ ul li {
 .pub-list li {
   margin-bottom: 1rem;
 }
-
-/* Experience / research items */
 
 .item {
   margin-top: 1rem;
