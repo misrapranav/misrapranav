@@ -225,8 +225,8 @@ li {
 
 /* image stays small */
 .hero-photo {
-  width: 85px;
-  height: 85px;
+  width: 135px;
+  height: 135px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #e1e1e5;
