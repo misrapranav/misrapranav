@@ -1,10 +1,14 @@
-/* Old-school academic style with boxed layout (compact) */
+/* Old-school academic style with boxed layout + scalable typography */
 
 :root {
   --bg: #ffffff;
   --fg: #111111;
   --muted: #555555;
   --accent: #003366;
+
+  /* MASTER TEXT SCALE — change ONLY this */
+  --scale: 1.5;   /* 1.0 = default, 1.5 = +50%, 0.85 = smaller */
+
   --maxw: 720px;
 }
 
@@ -20,11 +24,17 @@ body {
   font-family: "Georgia", "Times New Roman", serif;
   background: var(--bg);
   color: var(--fg);
-  line-height: 1.5;
-  font-size: 14px;        /* base size */
+  line-height: calc(1.5 * var(--scale));
+  font-size: calc(14px * var(--scale));      /* Entire site scales from here */
   border: 1px solid #cccccc;
-  margin: 16px;           /* smaller outer margin */
-  padding: 16px;          /* smaller inner padding */
+
+  /* 15% margins left + right */
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  padding: calc(16px * var(--scale));
 }
 
 /* Links */
@@ -50,18 +60,18 @@ a:hover {
 
 .site-header {
   border-bottom: 1px solid #dddddd;
-  margin-bottom: 1.2rem;
-  padding-bottom: 0.2rem;
+  margin-bottom: calc(1.2rem * var(--scale));
+  padding-bottom: calc(0.2rem * var(--scale));
 }
 
 .nav {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0.4rem 0.1rem;
+  padding: calc(0.4rem * var(--scale)) calc(0.1rem * var(--scale));
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  font-size: 0.8rem;
+  gap: calc(0.6rem * var(--scale));
+  font-size: calc(0.8rem * var(--scale));
 }
 
 .nav a {
@@ -72,7 +82,7 @@ a:hover {
 /* Sections */
 
 .section {
-  padding: 1.1rem 0;
+  padding: calc(1.1rem * var(--scale)) 0;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -83,71 +93,68 @@ a:hover {
 /* Hero */
 
 .hero {
-  padding-top: 0.3rem;
+  padding-top: calc(0.3rem * var(--scale));
 }
 
 /* Typography */
 
-/* Name */
 h1 {
-  font-size: 1.3rem;      /* was 1.7rem – now much smaller */
-  margin-bottom: 0.25rem;
+  font-size: calc(1.3rem * var(--scale));
+  margin-bottom: calc(0.25rem * var(--scale));
   font-weight: 600;
 }
 
-/* "Cognitive Neuroscience · AI · Language" */
 .subtitle {
   font-style: italic;
   color: var(--muted);
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;      /* smaller subtitle */
+  margin-bottom: calc(0.4rem * var(--scale));
+  font-size: calc(0.9rem * var(--scale));
 }
 
-/* Section headings */
 h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.4rem;
-  padding-bottom: 0.12rem;
+  font-size: calc(1.1rem * var(--scale));
+  margin-bottom: calc(0.4rem * var(--scale));
+  padding-bottom: calc(0.12rem * var(--scale));
   border-bottom: 1px solid #cccccc;
 }
 
-/* Sub-headings (PhD / roles) */
 h3 {
-  font-size: 0.95rem;
-  margin-bottom: 0.15rem;
+  font-size: calc(0.95rem * var(--scale));
+  margin-bottom: calc(0.15rem * var(--scale));
 }
 
-/* MAIN BODY TEXT (About, Research, etc.) */
+/* Main body text */
+
 p {
-  margin-bottom: 0.6rem;
-  font-size: 0.9rem;      /* shrink paragraph text */
+  margin-bottom: calc(0.6rem * var(--scale));
+  font-size: calc(0.9rem * var(--scale));
 }
 
 .muted {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: calc(0.85rem * var(--scale));
 }
 
 /* Lists */
 
 ul {
-  margin-left: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin-left: calc(1.1rem * var(--scale));
+  margin-bottom: calc(0.5rem * var(--scale));
 }
 
 ul li {
-  margin-bottom: 0.3rem;
+  margin-bottom: calc(0.3rem * var(--scale));
 }
 
 .pub-list li {
-  margin-bottom: 0.85rem;
+  margin-bottom: calc(0.85rem * var(--scale));
 }
 
-/* Experience / research items */
+/* Experience / research blocks */
 
 .item {
-  margin-top: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-top: calc(0.8rem * var(--scale));
+  margin-bottom: calc(0.5rem * var(--scale));
 }
 
 /* Talks list */
@@ -165,8 +172,8 @@ ul li {
 
 .site-footer {
   border-top: 1px solid #dddddd;
-  margin-top: 1.2rem;
-  padding: 0.6rem 0 1rem;
-  font-size: 0.8rem;
+  margin-top: calc(1.2rem * var(--scale));
+  padding: calc(0.6rem * var(--scale)) 0 calc(1rem * var(--scale));
+  font-size: calc(0.8rem * var(--scale));
   color: var(--muted);
 }
