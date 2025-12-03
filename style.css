@@ -32,8 +32,8 @@ body {
 }*/
 
 .wrapper {
-  width: 80%;          /* ← text takes 80% of the screen */
-  margin: 0 10%;       /* ← left 10%, right 10% */
+  width: 90%;          /* ← text takes 80% of the screen */
+  margin: 0 5%;       /* ← left 10%, right 10% */
   
   background: #ffffff;
   border: 1px solid #e1e1e5;
