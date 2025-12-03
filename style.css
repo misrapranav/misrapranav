@@ -210,30 +210,22 @@ li {
 
 /* ---- Hero photo next to name (square with rounded edges) ---- */
 
-.hero-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
+.hero-row {
+  display: grid;
+  grid-template-columns: auto 90px;  /* text, then small photo */
+  align-items: start;
+  column-gap: 16px;
 }
 
-.hero-text {
-  flex: 1;
+.hero-main {
+  /* text block just uses default styles */
 }
 
-/* .hero-photo {
-  width: 180px;       /* change if you want bigger/smaller */
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;   /* <--- square with soft edges */
-  border: 2px solid #e1e1e5;
-} */
-
+/* Small rounded-square headshot next to name */
 .hero-photo {
-  width: 10px;             /* smaller base size */
-  height: auto;             /* keeps correct aspect */
-  max-height: 10px;        /* prevents it from growing too tall */
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 2px solid #e1e1e5;
 }
