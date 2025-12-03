@@ -208,24 +208,28 @@ li {
 }
 
 
-/* ---- Hero photo next to name (square with rounded edges) ---- */
-
+/* === HERO ROW THAT NEVER WRAPS === */
 .hero-row {
-  display: grid;
-  grid-template-columns: auto 90px;  /* text, then small photo */
-  align-items: start;
-  column-gap: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: nowrap;         /* <-- THE KEY: NEVER wrap */
 }
 
+/* text stays normal */
 .hero-main {
-  /* text block just uses default styles */
+  flex: 1;
+  min-width: 0;              /* prevents overflow */
 }
 
-/* Small rounded-square headshot next to name */
+/* image stays small */
 .hero-photo {
-  width: 140px;
-  height: 140px;
+  width: 85px;
+  height: 85px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #e1e1e5;
+  flex-shrink: 0;            /* <-- VERY IMPORTANT */
 }
+
