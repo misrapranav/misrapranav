@@ -221,10 +221,19 @@ li {
   flex: 1;
 }
 
-.hero-photo {
+/* .hero-photo {
   width: 180px;       /* change if you want bigger/smaller */
   height: 180px;
   object-fit: cover;
   border-radius: 12px;   /* <--- square with soft edges */
+  border: 2px solid #e1e1e5;
+} */
+
+.hero-photo {
+  width: 120px;             /* smaller base size */
+  height: auto;             /* keeps correct aspect */
+  max-height: 150px;        /* prevents it from growing too tall */
+  object-fit: cover;
+  border-radius: 12px;
   border: 2px solid #e1e1e5;
 }
