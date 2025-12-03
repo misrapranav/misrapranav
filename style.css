@@ -1,8 +1,8 @@
-/* Retro academic / old-school layout */
+/* Old-school academic style inspired by ekdeepslubana.github.io */
 
 :root {
-  --bg: #fdfbf7;
-  --fg: #202020;
+  --bg: #ffffff;
+  --fg: #111111;
   --muted: #555555;
   --accent: #003366;
   --maxw: 720px;
@@ -21,80 +21,76 @@ body {
   line-height: 1.55;
 }
 
-/* Layout */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .container {
   width: 94%;
-  max-width: var(--maxw);
+  max-width: --maxw;
   margin: 0 auto;
 }
 
 /* Header / nav */
 
 .site-header {
-  border-bottom: 1px solid #c7c3b8;
+  border-bottom: 1px solid #dddddd;
   margin-bottom: 1.5rem;
-  background: #f4f0e8;
 }
 
 .nav {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0.6rem 0.4rem;
+  padding: 0.6rem 0.2rem;
   display: flex;
-  gap: 0.9rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   font-size: 0.88rem;
 }
 
 .nav a {
-  text-decoration: none;
-  color: var(--accent);
   letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.nav a:hover {
-  text-decoration: underline;
 }
 
 /* Sections */
 
 .section {
   padding: 1.8rem 0;
-  border-bottom: 1px solid #e0dbcf;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .section.alt {
-  background: #faf6ee;
+  background: #fafafa;
 }
 
 .hero {
-  padding-top: 1.2rem;
-}
-
-.hero .container {
-  padding-top: 0.4rem;
+  padding-top: 1rem;
 }
 
 /* Typography */
 
 h1 {
   font-size: 1.9rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
   font-weight: 600;
 }
 
 .subtitle {
   font-style: italic;
   color: var(--muted);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.15rem;
-  border-bottom: 1px solid #c7c3b8;
+  border-bottom: 1px solid #cccccc;
 }
 
 h3 {
@@ -114,7 +110,7 @@ p {
 /* Lists */
 
 ul {
-  margin-left: 1.1rem;
+  margin-left: 1.2rem;
   margin-bottom: 0.6rem;
 }
 
@@ -123,17 +119,15 @@ ul li {
 }
 
 .pub-list li {
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
 }
-
-/* “Item” blocks (experience, etc.) */
 
 .item {
   margin-top: 1rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.6rem;
 }
 
-/* Simple lists for talks */
+/* Talks list */
 
 .list-simple {
   list-style: none;
@@ -144,23 +138,12 @@ ul li {
   content: "– ";
 }
 
-/* Links */
-
-a {
-  color: var(--accent);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 /* Footer */
 
 .site-footer {
-  border-top: 1px solid #c7c3b8;
+  border-top: 1px solid #dddddd;
   margin-top: 1.5rem;
   padding: 0.8rem 0 1.4rem;
   font-size: 0.85rem;
   color: var(--muted);
-  text-align: left;
 }
