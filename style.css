@@ -61,7 +61,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  font-size: 0.88rem;
+  font-size: 1.5rem;
 }
 
 .nav a {
@@ -114,6 +114,7 @@ h3 {
 
 p {
   margin-bottom: 0.7rem;
+  font-size: 25px;          /* ← change this to shrink/grow all text */
 }
 
 .muted {
