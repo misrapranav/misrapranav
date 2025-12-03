@@ -4,39 +4,12 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Pranav Misra</title>
-  <link rel="stylesheet" href="style.css?v=7"/>
-  <style>
-    /* ===== nav + icon-bar alignment fix ===== */
-    .header-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .nav {
-      display: flex;
-      gap: 16px;
-      font-size: 15px;
-    }
-    .icon-bar {
-      display: flex;
-      gap: 12px;
-    }
-    .icon-bar a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .icon-bar a svg {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
-      fill: currentColor;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css?v=8"/>
 </head>
 <body>
   <div class="wrapper">
 
+    <!-- Header bar: nav + icons on one line -->
     <div class="header-bar">
       <nav class="nav">
         <a href="#home">Home</a>
@@ -47,18 +20,27 @@
 
       <div class="icon-bar">
         <a href="https://www.dropbox.com/scl/fi/48n5oii9em3ad4qnmveyy/PranavMisraCV.pdf?rlkey=rn5c4rdkqhubyv1cmznnv1qcr&dl=0"
-           target="_blank" rel="noreferrer" title="CV">CV</a>
+           target="_blank" rel="noreferrer" title="CV" class="icon-text">
+          CV
+        </a>
+
         <a href="mailto:misra@g.harvard.edu" title="Email">
-          <svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 13.5l8-6V18H4V7.5l8 6zM20 6H4l8 6 8-6z"/></svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+          </svg>
         </a>
+
         <a href="https://www.linkedin.com/in/pranav-misra" target="_blank" rel="noreferrer" title="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M4 3C2.9 3 2 3.9 2 5s.9 2 2 2 2-.9 2-2S5.1 3 4 3zM2 8h4v12H2V8zm7 0h4v1.7c.6-1.1 2.3-2.2 4.6-2.2 4.9 0 5.8 3.2 5.8 7.4V20h-4v-6.3c0-1.5-.0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.2V20h-4V8z"/></svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M4 3C2.9 3 2 3.9 2 5s.9 2 2 2 2-.9 2-2S5.1 3 4 3zM2 8h4v12H2V8zm7 0h4v1.7c.8-1.2 2.3-2.2 4.3-2.2 4.6 0 5.4 3 5.4 6.9V20h-4v-5.7c0-1.7-.1-3.8-2.3-3.8-2.3 0-2.7 1.8-2.7 3.6V20h-4V8z"/>
+          </svg>
         </a>
-        <a class="top-link" href="https://scholar.google.com/citations?user=cwcxlLkAAAAJ"
+
+        <a href="https://scholar.google.com/citations?user=cwcxlLkAAAAJ"
            target="_blank" rel="noreferrer" title="Google Scholar">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-               viewBox="0 0 512 512" fill="currentColor">
-            <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3 33.6 0 64.6 11.1 89.6 29.9 9.1 6.9 17.4 14.7 24.8 23.5 5.6 6.6 10.6 13.8 15 21.3 2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/>
+          <svg viewBox="0 0 512 512">
+            <path d="M256 0 0 202.7l62.9 51.2C91.3 207.3 141.1 176 196.4 166.3 186.4 154.2 181 139.4 181 124c0-41.4 33.6-75 75-75s75 33.6 75 75c0 15.4-5.4 30.2-15.4 42.3 55.3 9.7 105.1 41 133.5 87.6L512 202.7 256 0zM256 181c-74.4 0-135 60.6-135 135s60.6 135 135 135 135-60.6 135-135-60.6-135-135-135zm0 60c41.4 0 75 33.6 75 75s-33.6 75-75 75-75-33.6-75-75 33.6-75 75-75z"/>
           </svg>
         </a>
       </div>
@@ -89,38 +71,124 @@
     <section id="publications" class="section">
       <div class="container">
         <h2>Publications</h2>
-        <ul class="pub-list">
-          <li>
-            <strong>Invariant neural representation of parts of speech in the human brain</strong><br/>
-            <span class="muted">Misra, P., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Sceillig, S. & Kreiman, G. (2024). bioRxiv preprint.</span><br/>
-            <a href="https://www.biorxiv.org/content/10.1101/2024.01.15.575788v1" target="_blank" rel="noreferrer">bioRxiv preprint</a>
-          </li>
-          <li>
-            <strong>Multimodal syntactic and semantic processing of sentences in the human brain</strong><br/>
-            <span class="muted">Misra, P., Sharma, A., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Stone, S., Bulacio, J., Bingaman, W. & Kreiman, G. Manuscript in preparation (2024).</span><br/>
-            <a href="https://www.dropbox.com/scl/fi/wtn0qwo9p2lszp060d16v/Chapter4.pdf?rlkey=dqkh0q1vzlxjac2b4rf4hz4q4&dl=0" target="_blank" rel="noreferrer">Chapter 4 PDF</a>
-          </li>
-          <li>
-            <strong>Brain TreeBank: Intracranial recordings of neural activity with multimodal stimulus</strong><br/>
-            <span class="muted">Wang, C., Yaari, A., Singh, A., Subramaniam, V., Rosenfarb, D., DeWitt, J., Misra, P., Madsen, J., Stone, S., Kreiman, G., Katz, B., Cases, I. & Barbu, A. (NeurIPS, 2024).</span><br/>
-            <a href="https://openreview.net/pdf?id=KZlJF8kguO" target="_blank" rel="noreferrer">OpenReview PDF</a>
-          </li>
-          <li>
-            <strong>Neural processing of nouns and verbs with large-scale intracranial recordings from naturalistic language</strong><br/>
-            <span class="muted">Wang, C., Yaari, A., Singh, A.K., Cases, I., Subramaniam, V., Rosenfarb, D., Misra, P., Madsen, J.R., Stone S., Kreiman G., Katz B. & Barbu A. (2024, manuscript).</span><br/>
-            <a href="https://www.dropbox.com/scl/fi/bvjoke031nmq9m0ee1fgv/Decoding_Language.pdf?rlkey=817f9f75x6ud20y71ex8ix5fz&dl=0" target="_blank" rel="noreferrer">PDF</a>
-          </li>
-          <li>
-            <strong>Hierarchical Sequence Composition in Recurrent Networks with Finite Automata</strong><br/>
-            <span class="muted">Misra, P. (2024, manuscript).</span><br/>
-            <a href="https://www.dropbox.com/scl/fi/yhtxqrgiabdyzbt7j3u0r/Qual_Proposal.pdf?rlkey=0jbk6j3adco1aftbe6se3qzq7&st=vxmzec0i&dl=0" target="_blank" rel="noreferrer">PDF</a>
-          </li>
-          <li>
-            <strong>Minimal memory for details in real life events</strong><br/>
-            <span class="muted">Misra, P., Marconi, A., Peterson, M. & Kreiman, G. (2018). Nature Scientific Reports.</span><br/>
-            <a href="https://www.nature.com/articles/s41598-018-33792-2" target="_blank" rel="noreferrer">Journal article</a>
-          </li>
-        </ul>
+
+        <div class="pub-list">
+
+          <!-- Parts of speech -->
+          <div class="pub-entry">
+            <img src="website-images/partsOfSpeech.jpg"
+                 alt="Invariant neural representation of parts of speech in the human brain"
+                 class="pub-thumb"/>
+            <div class="pub-text">
+              <div class="pub-title">
+                Invariant neural representation of parts of speech in the human brain
+              </div>
+              <div class="pub-meta muted">
+                Misra, P., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Sceillig, S. &amp; Kreiman, G. (2024). bioRxiv preprint.
+              </div>
+              <div class="pub-links">
+                <a href="https://www.biorxiv.org/content/10.1101/2024.01.15.575788v1"
+                   target="_blank" rel="noreferrer">bioRxiv preprint</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Multimodal syntax & semantics -->
+          <div class="pub-entry">
+            <img src="website-images/syntaxAndSemantics.jpg"
+                 alt="Multimodal syntactic and semantic processing of sentences in the human brain"
+                 class="pub-thumb"/>
+            <div class="pub-text">
+              <div class="pub-title">
+                Multimodal syntactic and semantic processing of sentences in the human brain
+              </div>
+              <div class="pub-meta muted">
+                Misra, P., Sharma, A., Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Stone, S., Bulacio, J., Bingaman, W. &amp; Kreiman, G. Manuscript in preparation (2024).
+              </div>
+              <div class="pub-links">
+                <a href="https://www.dropbox.com/scl/fi/wtn0qwo9p2lszp060d16v/Chapter4.pdf?rlkey=dqkh0q1vzlxjac2b4rf4hz4q4&dl=0"
+                   target="_blank" rel="noreferrer">Chapter 4 PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brain TreeBank -->
+          <div class="pub-entry">
+            <img src="website-images/brainTreeBank.png"
+                 alt="Brain TreeBank: Intracranial recordings of neural activity with multimodal stimulus"
+                 class="pub-thumb"/>
+            <div class="pub-text">
+              <div class="pub-title">
+                Brain TreeBank: Intracranial recordings of neural activity with multimodal stimulus
+              </div>
+              <div class="pub-meta muted">
+                Wang, C., Yaari, A., Singh, A., Subramaniam, V., Rosenfarb, D., DeWitt, J., Misra, P., Madsen, J., Stone, S., Kreiman, G., Katz, B., Cases, I. &amp; Barbu, A. (NeurIPS, 2024).
+              </div>
+              <div class="pub-links">
+                <a href="https://openreview.net/pdf?id=KZlJF8kguO"
+                   target="_blank" rel="noreferrer">OpenReview PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nouns vs verbs -->
+          <div class="pub-entry">
+            <img src="website-images/nounsNverbs.jpg"
+                 alt="Neural processing of nouns and verbs with large-scale intracranial recordings"
+                 class="pub-thumb"/>
+            <div class="pub-text">
+              <div class="pub-title">
+                Neural processing of nouns and verbs with large-scale intracranial recordings from naturalistic language
+              </div>
+              <div class="pub-meta muted">
+                Wang, C., Yaari, A., Singh, A.K., Cases, I., Subramaniam, V., Rosenfarb, D., Misra, P., Madsen, J.R., Stone, S., Kreiman, G., Katz, B. &amp; Barbu, A. (2024, manuscript).
+              </div>
+              <div class="pub-links">
+                <a href="https://www.dropbox.com/scl/fi/bvjoke031nmq9m0ee1fgv/Decoding_Language.pdf?rlkey=817f9f75x6ud20y71ex8ix5fz&dl=0"
+                   target="_blank" rel="noreferrer">PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hierarchical sequence composition -->
+          <div class="pub-entry">
+            <img src="website-images/heirarchicalRNN.jpg"
+                 alt="Hierarchical Sequence Composition in Recurrent Networks with Finite Automata"
+                 class="pub-thumb"/>
+            <div class="pub-text">
+              <div class="pub-title">
+                Hierarchical Sequence Composition in Recurrent Networks with Finite Automata
+              </div>
+              <div class="pub-meta muted">
+                Misra, P. (2024, manuscript).
+              </div>
+              <div class="pub-links">
+                <a href="https://www.dropbox.com/scl/fi/yhtxqrgiabdyzbt7j3u0r/Qual_Proposal.pdf?rlkey=0jbk6j3adco1aftbe6se3qzq7&st=vxmzec0i&dl=0"
+                   target="_blank" rel="noreferrer">PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimal memory -->
+          <div class="pub-entry">
+            <img src="website-images/minMemory.jpg"
+                 alt="Minimal memory for details in real life events"
+                 class="pub-thumb"/>
+            <div class="pub-text">
+              <div class="pub-title">
+                Minimal memory for details in real life events
+              </div>
+              <div class="pub-meta muted">
+                Misra, P., Marconi, A., Peterson, M. &amp; Kreiman, G. (2018). Nature Scientific Reports.
+              </div>
+              <div class="pub-links">
+                <a href="https://www.nature.com/articles/s41598-018-33792-2"
+                   target="_blank" rel="noreferrer">Journal article</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
