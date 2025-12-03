@@ -1,107 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Pranav Misra</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-  <h1>Pranav Misra</h1>
+<header class="site-header">
+  <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#talks">Talks</a>
+    <a href="#contact">Contact</a>
 
-  <p>
-    I am a Ph.D. biophysicist from Harvard University. My research sits at the
-    intersection of cognitive neuroscience and machine learning, using
-    large-scale intracranial recordings and modern AI models to study how
-    language is represented in the human brain.
-  </p>
+    <!-- BLOG: hidden until you add posts -->
+    <!-- <a href="#blog">Blog</a> -->
+  </nav>
+</header>
 
-  <p>
-    Broadly, I’m interested in robust and multimodal neural representations,
-    brain–machine interfaces for language, and how ideas from linguistics and
-    deep learning can be combined to understand human cognition.
-  </p>
+<section id="home" class="section hero">
+  <div class="container">
+    <h1>Pranav Misra, Ph.D.</h1>
+    <p class="subtitle">
+      Cognitive Neuroscience · AI · Language  
+    </p>
+    <p>
+      Ph.D. researcher studying multimodal representations of language in the human brain using invasive recordings and modern AI models.
+    </p>
+  </div>
+</section>
 
-  <p class="links">
-    <a href="mailto:misra@g.harvard.edu">Email</a> /
-    <a href="assets/PranavMisraCV.pdf" target="_blank">CV</a> /
-    <a href="https://www.linkedin.com/in/pranav-misra" target="_blank">LinkedIn</a> /
-    <a href="https://github.com/misrapranav" target="_blank">GitHub</a>
-    <span id="blog-link-wrapper"> / <a href="#blog">Blog</a></span>
-  </p>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I am Pranav Misra, from Lucknow, India, and Cambridge, Massachusetts—two places that have shaped my worldview through community, conversation, and intellectual curiosity. My academic journey bridges computer science, neuroscience, linguistic theory, and machine learning.  
+    </p>
 
-  <h2>News</h2>
-  <ul>
-    <li>2024 – Brain TreeBank accepted to NeurIPS.</li>
-    <li>2024 – Work on invariant neural representations of parts of speech under review.</li>
-    <li>2023–2024 – Invited talks at Cleveland Clinic, Genentech gRED, LMU–Harvard Forum, and others.</li>
-  </ul>
+    <p>
+      Starting at BITS Pilani, I explored computation through Logic, Theory of Computation, and Algorithm Design, later branching into gravitational theory and advanced calculus before returning to neural computation. Research in augmented reality and visual segmentation eventually led me to Harvard, where I studied human episodic memory during an undergraduate thesis project.  
+    </p>
 
-  <h2>Research</h2>
-  <p>
-    My Ph.D. work involved building and analyzing large-scale intracranial
-    datasets (5,000+ electrodes across dozens of patients, 100+ hours of
-    linguistic stimuli) spanning phrases, sentences, and naturalistic text. I
-    develop models that link these recordings with language and vision–language
-    models to study syntactic and semantic representations, and to enable more
-    data-efficient neural decoding.
-  </p>
-  <p>
-    I also collaborate with clinical teams at the Cleveland Clinic and Boston
-    Children’s Hospital to identify neural signatures of sentence processing
-    that can inform surgical planning in epilepsy patients.
-  </p>
+    <p>
+      During my Ph.D. at Harvard, my work focused on multimodal intracranial signals for language—providing rigorous neuroscientific evidence for parts-of-speech, syntax, and semantic processing in the human brain  [oai_citation:2‡PranavMisraCV.pdf](sediment://file_000000004abc71f5a16994bfee519036). I integrate computational linguistics, sEEG signals, deep learning models, and vision-language systems to understand how the brain forms linguistic and conceptual structure.  
+    </p>
 
-  <h2>Selected Publications</h2>
-  <ul class="pubs">
-    <li>
-      <strong>Brain TreeBank: Intracranial recordings of neural activity with multimodal stimulus.</strong><br />
-      Wang, C., Yaari, A., Singh, A., Subramaniam, V., Rosenfarb, D., DeWitt, J., <em>Misra, P.</em>, et al.  
-      <span class="venue">NeurIPS, 2024.</span>
-    </li>
-    <li>
-      <strong>Invariant neural representation of parts of speech in the human brain.</strong><br />
-      <em>Misra, P.</em>, Shih, Y.-C., Yu, H.-Y., Weisholtz, D., Madsen, J. R., Sceillig, S., &amp; Kreiman, G.  
-      <span class="venue">Under review, 2024.</span>
-    </li>
-    <li>
-      <strong>Minimal memory for details in real life events.</strong><br />
-      <em>Misra, P.</em>, Marconi, A., Peterson, M., &amp; Kreiman, G.  
-      <span class="venue">Nature Scientific Reports, 2018.</span>
-    </li>
-  </ul>
+    <p>
+      My broader research interest is understanding intelligent computation through neurocognitive frameworks and theory-driven modeling. I aim to explore hierarchical computation, compositionality, and biologically grounded mechanisms in neural and language models.  
+    </p>
+  </div>
+</section>
 
-  <!-- Blog section: hidden until you add at least one .blog-post -->
-  <section id="blog">
-    <h2>Blog</h2>
-    <ul id="blog-list">
-      <!-- Example of a future post:
-      <li class="blog-post">
-        <a href="blog/decoding-language-in-the-brain.html">
-          Decoding language in the brain with multimodal models
-        </a>
-        <span class="post-meta">Jan 2026</span>
+<section id="research" class="section alt">
+  <div class="container">
+    <h2>Research</h2>
+
+    <div class="item">
+      <h3>Ph.D. in Biophysics — Harvard University (2019–2025)</h3>
+      <p class="muted">Thesis: <em>Robust and Multimodal Intracranial Signals for Language in the Human Brain</em>  [oai_citation:3‡PranavMisraCV.pdf](sediment://file_000000004abc71f5a16994bfee519036)</p>
+
+      <ul>
+        <li>Designed and collected invasive neural datasets from <strong>5,064 electrodes</strong> across <strong>47 human patients</strong> with over <strong>100+ hours</strong> of linguistic stimuli. </li>
+        <li>Produced novel neuroscientific evidence for linguistic theories on parts-of-speech, syntax, and semantics using multimodal recordings.</li>
+        <li>Applied language models to improve decoding accuracy and interpretability for brain–machine interfaces.</li>
+        <li>Developed cross-modal decoding pipelines integrating sentence → image and image → sentence tasks.</li>
+        <li>Used few-shot & semi-supervised learning for data-efficient interpretability across subjects.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>Clinical Collaboration Lead — Cleveland Clinic & Boston Children’s Hospital</h3>
+      <ul>
+        <li>Identified neural signatures of multimodal sentence processing relevant for epilepsy surgery planning.  [oai_citation:4‡PranavMisraCV.pdf](sediment://file_000000004abc71f5a16994bfee519036)</li>
+        <li>Accelerated a multi-institutional invasive recording study from 3 years to 6 months via cross-team coordination.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>Teaching — Neuro140: Biological & Artificial Intelligence</h3>
+      <ul>
+        <li>Mentored 60+ students on machine learning for biomedical and neural datasets.</li>
+        <li>Guided projects using autoencoders, semi-supervised learning, and multimodal pipelines.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="container">
+    <h2>Selected Publications</h2>
+
+    <ul class="pub-list">
+      <li>
+        <strong>Invariant neural representation of parts of speech in the human brain</strong>  
+        <span class="muted">Under review, Science Advances (2024)</span>  
       </li>
-      -->
+
+      <li>
+        <strong>Multimodal syntactic and semantic processing of sentences in the human brain</strong>  
+        <span class="muted">In preparation, 2024</span>
+      </li>
+
+      <li>
+        <strong>Brain TreeBank: Intracranial recordings of neural activity with multimodal stimulus</strong>  
+        <span class="muted">NeurIPS 2024 (accepted)</span>
+      </li>
+
+      <li>
+        <strong>Neural processing of nouns and verbs from naturalistic language</strong>  
+        <span class="muted">In preparation, 2024</span>
+      </li>
+
+      <li>
+        <strong>Hierarchical Sequence Composition in RNNs with Finite Automata</strong>  
+        <span class="muted">Under review, 2024</span>
+      </li>
+
+      <li>
+        <strong>Minimal memory for details in real-life events</strong>  
+        <span class="muted">Scientific Reports (Nature), 2018</span>
+      </li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <p class="footer">
-    Last updated: 2024 · This site is still under construction.
-  </p>
+<section id="talks" class="section alt">
+  <div class="container">
+    <h2>Invited Talks</h2>
+    <ul class="list-simple">
+      <li>Genentech R&D (gRED), 2024</li>
+      <li>Cleveland Clinic Neurosurgery Grand Rounds, 2023</li>
+      <li>LMU–Harvard Young Scientists Forum, 2023</li>
+      <li>Center for Brain Science Seminar, 2023</li>
+      <li>Brains & Behavior in the Wild (Inaugural), 2022</li>
+    </ul>
+  </div>
+</section>
 
-  <script>
-    // Hide blog link + section if there are no posts yet
-    (function () {
-      const posts = document.querySelectorAll(".blog-post");
-      const blogSection = document.getElementById("blog");
-      const blogLinkWrapper = document.getElementById("blog-link-wrapper");
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:misra@g.harvard.edu">misra@g.harvard.edu</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/pranav-misra">linkedin.com/in/pranav-misra</a></p>
+    <p>Location: Boston, MA</p>
+  </div>
+</section>
 
-      if (!posts.length) {
-        if (blogSection) blogSection.style.display = "none";
-        if (blogLinkWrapper) blogLinkWrapper.style.display = "none";
-      }
-    })();
-  </script>
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Pranav Misra</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
